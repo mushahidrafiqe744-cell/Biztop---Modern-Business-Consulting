@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import clientProfileExecutive from "../assets/images/client_profile_executive_1790767238669.jpg";
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,7 +12,7 @@ export default function Testimonials() {
       role: "VP of Operations, HealthVault Inc.",
       review: "Biztop restructured our digital supply chain and engineering models. They delivered a fully scalable React application and reduced operating latency by 45%. Their strategic insights are unparalleled.",
       rating: 5,
-      photo: "/src/assets/images/client_profile_executive_1790767238669.jpg" // our generated high fidelity image!
+      photo: clientProfileExecutive // our generated high fidelity image!
     },
     {
       name: "Thomas Finch",

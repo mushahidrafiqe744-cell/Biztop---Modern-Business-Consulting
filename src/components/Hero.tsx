@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight, Play, CheckCircle2, Shield, Users, Clock, X } from "lucide-react";
+import heroBusinessTeam from "../assets/images/hero_business_team_1790767214199.jpg";
 
 interface HeroProps {
   onGetStarted: () => void;
@@ -119,7 +120,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden aspect-[4/3] lg:aspect-square shadow-2xl border border-white/10 group bg-primary/20">
               <img
-                src="/src/assets/images/hero_business_team_1790767214199.jpg"
+                src={heroBusinessTeam}
                 alt="Biztop Professional Business Team collaborating in an executive conference"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRight, CheckCircle2, X, Award, Users2, ShieldAlert, Sparkles, Building2, HelpCircle } from "lucide-react";
+import clientProfileExecutive from "../assets/images/client_profile_executive_1790767238669.jpg";
+import aboutCorporateOffice from "../assets/images/about_corporate_office_1790767225826.jpg";
 
 interface AboutProps {
   onQuoteRequested: () => void;
@@ -26,7 +28,7 @@ export default function About({ onQuoteRequested }: AboutProps) {
     {
       name: "Dr. Elena Rostova",
       role: "Head of Digital Strategy & Technology",
-      avatar: "/src/assets/images/client_profile_executive_1790767238669.jpg", // our generated portrait!
+      avatar: clientProfileExecutive, // our generated portrait!
       bio: "Ph.D in Operations Management. Architect of Biztop's automated conversion systems."
     },
     {
@@ -48,7 +50,7 @@ export default function About({ onQuoteRequested }: AboutProps) {
               {/* Primary Image: Generated about image */}
               <div className="rounded-2xl md:rounded-3xl overflow-hidden aspect-[4/3] shadow-lg border border-gray-100 group">
                 <img
-                  src="/src/assets/images/about_corporate_office_1790767225826.jpg"
+                  src={aboutCorporateOffice}
                   alt="Biztop modern physical corporate consulting hub interior"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -76,7 +78,7 @@ export default function About({ onQuoteRequested }: AboutProps) {
               <div className="absolute -bottom-8 -right-4 sm:-right-8 bg-white p-3 rounded-2xl shadow-xl border border-gray-100 max-w-[200px] hidden sm:block">
                 <div className="relative rounded-xl overflow-hidden aspect-square w-full mb-2">
                   <img
-                    src="/src/assets/images/client_profile_executive_1790767238669.jpg"
+                    src={clientProfileExecutive}
                     alt="Dr. Elena Rostova - Partner"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
