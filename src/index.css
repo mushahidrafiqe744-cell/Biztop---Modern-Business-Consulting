@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cabinet Grotesk", "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-primary: #063F3A;
+  --color-secondary: #A8F45A;
+  --color-brand-bg: #F7F8F1;
+  --color-brand-text: #073F3B;
+  --color-accent-gold: #C5A880;
+}
+
+/* Custom styles for smooth scrolling and clean premium aesthetics */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  overflow-x: hidden;
+}
+
+/* Remove scrollbars for elegant sliders if needed, but standard overflows are fine */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Base custom interactive element focus styles for accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom premium global hover states for images and text elements */
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #549216 !important; /* Elegant lime shift on heading hovers */
+  text-shadow: 0 0 1px rgba(168, 244, 90, 0.3);
+}
+
+p, li, label {
+  transition: color 0.35s ease, transform 0.35s ease !important;
+}
+p:hover, li:hover {
+  color: #063F3A !important; /* Highlight deep dark primary text */
+}
+
+/* Every single image zooms gently on hover */
+img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease !important;
+}
+img:hover {
+  transform: scale(1.06) !important;
+  filter: brightness(1.06) !important;
+}

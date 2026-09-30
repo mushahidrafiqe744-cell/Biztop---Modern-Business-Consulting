@@ -1,0 +1,8 @@
+{
+  "name": "Biztop - Modern Business Consulting",
+  "description": "Biztop is a premium business consulting website offering growth strategy, website development, SEO, and marketing services to build, grow, and succeed.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
